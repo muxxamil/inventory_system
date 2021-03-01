@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.table-striped td, .table-striped th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-striped tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-striped tr:hover {background-color: #ddd;}
+
+.table-striped th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    color: white;
+}
+
+.pagination a {
+    float: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+.pagination a.disable {
+    background-color: lightgray;
+    cursor: unset;
+}
+
+.pagination a:first-child {
+    float: left;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  display: none;
+}
+
+.alert.success {
+  background-color: #4CAF50;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}

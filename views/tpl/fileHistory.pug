@@ -1,0 +1,21 @@
+table.table.table-striped
+      tr
+        th Name
+        th Type
+        th Created At
+
+      each file in files
+        tr
+          td= file.name
+          td= file.type
+          td= file.createdAt
+.pagination
+    if currentPage > 0
+        a(data-page=currentPage-1) &laquo; Prev
+    else
+        a.disable(data-page=currentPage-1) &laquo; Prev
+
+    if currentPage < (total - 1)
+        a(data-page=currentPage+1) Next &raquo;
+    else
+        a.disable(data-page=currentPage+1) Next &raquo;

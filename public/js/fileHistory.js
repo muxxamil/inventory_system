@@ -42,8 +42,10 @@ $(document).ready(function(){
             contentType: false,
         });
 
+        
         if (response.status === 200) {
             renderSuccessNotification();
+            getFileHistory(0);
         } else {
             renderErrorNotification(response.responseJSON);
         }

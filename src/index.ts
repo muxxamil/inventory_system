@@ -3,9 +3,12 @@ import { sequelize } from './models';
 import * as routes from './config/routes';
 import passport from 'passport';
 import session from 'express-session';
+import helmet from 'helmet';
 
 const app = express();
 const port = process.env.PORT || '8000';
+
+app.use(helmet());
 
 app.use('/public', express.static('public'));
 
